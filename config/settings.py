@@ -9,6 +9,10 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from pathlib import Path
 
@@ -25,8 +29,8 @@ SECRET_KEY = 'django-insecure-9g1x#a7ggx_ug4-#b$wv!#aj!s^4cm$rc@n6x4z9ve-0_bvrin
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.onrender.com']
 
 # Application definition
 
