@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-9g1x#a7ggx_ug4-#b$wv!#aj!s^4cm$rc@n6x4z9ve-0_bvrin
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['.onrender.com']
+ALLOWED_HOSTS = []
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -150,7 +150,7 @@ INSTALLED_APPS = [
 
 
 REST_FRAMEWORK = {
-    "EXCEPTION_HANDLER": "core.exceptions.custom_exception_handler",
+    
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
