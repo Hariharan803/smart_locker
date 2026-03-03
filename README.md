@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Smart Storage Locker System
 A backend API system for managing smart storage lockers built using Django and Django REST Framework.
 Features
